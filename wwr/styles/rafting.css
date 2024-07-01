@@ -73,8 +73,8 @@ nav a:hover {
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--secondary-color);
-    font-size: 3rem;
+    color: whitesmoke;
+    font-size: 2rem;
     text-align: center;
 }
 
