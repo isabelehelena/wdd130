@@ -136,3 +136,73 @@ footer p {
     width: 30px;
     height: 30px;
 }
+
+body h1{
+    text-align: center;
+}
+
+header{
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #FB8500;
+    max-width: 1000px;
+}
+.logo img{
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    text-align: right;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+.navigation li {
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: flex;
+    color: navy;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    color: #f0f0f0;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+}
+
+.container img{
+    margin-right: 10px;
+}
+
+.imagem-meio{
+    float: center;
+    margin: 0 10px 10px 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.imagem-meio{
+    max-width: 100%;
+    margin: 0 20px;
+}
