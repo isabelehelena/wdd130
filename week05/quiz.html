@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <link rel="stylesheet" href="styles/quiz.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Basic HTML and CSS Quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Basic HTML and CSS Quiz</h1>
+    </header>
+<main>
+    <form>
+        <fieldset>
+            <div class="form-item">
+                <label for="q1">1. What are HTML documents for?</label>
+                <input type="text" id="q1" name="q1">
+            </div>
+            <div class="form-item">
+                <label for="q2">2. Briefly explain the difference between margin and padding in CSS:</label>
+                <textarea id="q2" name="q2" rows="4"></textarea>
+            </div>
+            <div class="form-item">
+                <label for="q3">3. What is the function of the class selector (.) in CSS?</label>
+                <select id="q3" name="q3">
+                    <option value=""selected disabled>Choose One...</option>
+                    <option value="1">Select elements with a specific class</option>
+                    <option value="2">Select elements with a specific ID</option>
+                    <option value="3">Select all elements in the document</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="q4">4. How many heading levels (h1-h6) are available in HTML?</label>
+                <input type="number" id="q4" min="1" max="6">
+            </div>
+        </fieldset>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</main>
+<footer>
+    <p>©️2024 | HTML and CSS Quiz | Isabele Helena</p>
+</footer>
+</body>    
+</html>
