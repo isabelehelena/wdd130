@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Contact page</title>
+    <title>Contact Wild Water</title>
     <meta name="description" content="Contains information on how to contact us">
     <meta name="author" content="Isabele Helena">
     <!-- Importação da fonte Nunito Sans do Google Fonts -->
@@ -33,12 +33,46 @@
         <p>Email: </p>
        
     </article>
+ <!--fotos funcionários-->   
+    <seletion id="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img src="images/employees1.jpg" alt="employees">
+                <p>Nome1</p>
+            </div>
+            <div class="team-member">
+                <img src="images/employees2.jpg" alt="employees">
+                <p>Nome2</p>
+            </div>
+            <div class="team-member">
+                <img src="images/employees3.jpg" alt="employees">
+                <p>Nome2</p>
+            </div>
+        </div>    
+    </seletion>
 
-    <div class="container">
-        <img src="images/employees1.jpg" alt="employees">
-        <img src="images/employees2.jpg" alt="employees">
-        <img src="images/employees3.jpg" alt="employees">
-    </div>
+    <seletion id="comments">
+        <div class="container">
+            <h2>Leave your comment</h2>
+            <form action="submit_form.php" method= "POST">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name">   
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comentário:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar Comentário</button>
+            </form> 
+        </div>
+    </seletion>
+    
 </main>
 <footer>
     <p>©2024 | Wild Water Rafting | Isabele Helena</p>
