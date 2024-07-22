@@ -26,51 +26,89 @@
     </header>
     
 <main>
-    <h1>Contact Us</h1>
-    <article>
-        <p>Address:</p>
-        <p>Phone: </p>
-        <p>Email: </p>
-       
-    </article>
+    <h1>Company information</h1>
+    <div class="container">
+        <h2>Address:</h2>
+        <p>Rodovia BR 469 - Km 22,5 - Foz do Iguaçu/PR - Brasil CEP: 85859-899</p>
+
+        <H2>Phone numbers: </H2>
+        <p>(45) 9876-5432<br>(45) 8765-4321</p>
+
+        <h2>E-mail:</h2>
+        <p>wildwaterrafting@gmail.com</p>
+
+        <h2>Localização no Mapa:</h2>
+        <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8567.949630672541!2d-53.82185269148322!3d-25.459014975870282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f14d6db34e243d%3A0x6e633cd35854aa8f!2sParque%20Nacional%20Igua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1721608849000!5m2!1spt-BR!2sbr" " width="900" height="550" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+        </div>
+    </div>
+
  <!--fotos funcionários-->   
+    <h1>Our Team</h1>
     <seletion id="team">
         <div class="container">
-            <h2>Our Team</h2>
             <div class="team-member">
-                <img src="images/employees1.jpg" alt="employees">
-                <p>Nome1</p>
+                <img src="images/employees1.avif" alt="employees">
+                <p>Alice</p>
+                <p>Alice is one of our rafting drivers, she welcomes, guides, prepares and guides you safely through rafting activities</p>
             </div>
             <div class="team-member">
-                <img src="images/employees2.jpg" alt="employees">
-                <p>Nome2</p>
+                <img src="images/employees2.avif" alt="employees">
+                <p>Robert</p>
+                <p>Robert is an outdoor sports instructor and has extensive climbing, rafting and hiking experience and loves sharing his passion for physical activity with others</p>
             </div>
             <div class="team-member">
-                <img src="images/employees3.jpg" alt="employees">
-                <p>Nome2</p>
+                <img src="images/employees3.avif" alt="employees">
+                <p>Mike</p>
+                <p>Mike is one of our ecotourism guides, and has great experience in leading groups of people in natural environments, such as forests, national parks, waterfalls, beaches, trails, tours, camps and other outdoor activities.</p>
             </div>
         </div>    
     </seletion>
 
     <seletion id="comments">
-        <div class="container">
-            <h2>Leave your comment</h2>
-            <form action="submit_form.php" method= "POST">
-                <div class="form-group">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name">   
+        <h1>Leave your comment</h1>
+        <fieldset>
+            <div class="container">
+                <form action="submit_form.php" method= "POST">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name">   
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="purpose">Message Purpose:</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="inquiry" name="purpose" value="General Inquiry">
+                        <label for="inquiry">General Inquiry</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                        <label for="reservation">Reservation Question
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                    
+                        <label for="newsletter">Please sign me up for the monthly newsletter:</label>
+                        <select id="newsletter" name="newsletter">
+                            <option value="yes">Yes</option>
+                            <option value="no" selected>No</option>
+                        </select>
+                    
                 </div>
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="comment">Comentário:</label>
-                    <textarea id="comment" name="comment" rows="4" required></textarea>
-                </div>
-                <button type="submit">Enviar Comentário</button>
-            </form> 
-        </div>
+                    <button type="submit">Send Comment</button>
+                </form> 
+            </div>
+        </fieldset>
     </seletion>
     
 </main>

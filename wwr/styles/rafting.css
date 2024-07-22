@@ -15,14 +15,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* novo Cor de fundo semelhante à imagem de exemplo */
+    background-color: #dff1f2; /* novo Cor de fundo semelhante à imagem de exemplo */
 }
 
 header {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem 0;
-    text-align: center;
+    text-align:center;
 }
 
 header img {
@@ -33,7 +33,7 @@ header img {
 }
 
 nav {
-    text-align: center;
+    text-align:center;
 }
 
 nav a {
@@ -59,7 +59,7 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
-    box-shadow: 0px 0px 20px rgba(235, 53, 53, 0.1);
+    box-shadow: 0px 0px 20px rgba(227, 107, 107, 0.1);
     overflow: hidden;
 }
 
@@ -162,11 +162,11 @@ h1{
 }
 
 nav {
-    text-align: right;
+    text-align:right;
 }
 
 .navigation {
-    display: flex;
+    display:flex;
     list-style: none;
 }
 .navigation li {
@@ -186,7 +186,7 @@ nav {
     text-decoration: underline;
 }
 .container{
-    display: flex;
+    display:flex;
 }
 
 .container img{
@@ -199,7 +199,7 @@ nav {
 }
 
 .container{
-    display: flex;
+    display:block;
     align-items: center;
 }
 
@@ -212,16 +212,16 @@ nav {
     text-align: center;
 }
 .team-member{
-    display: inline-block;
+    display:block;
     margin: 20px;
 }
 .team-member img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
 }
 .team-member p{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /* Estilos para a seção de comentários */
@@ -230,22 +230,33 @@ nav {
     text-align: center;
 }
 form{
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     background-color: #ffb8037d;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    display: grid;
+}
+
+fieldset{
+    display:grid;
+    grid: gap 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgba(243, 243, 241, 0.93);
+    padding: 1rem;
 }
 .form-group{
     margin-bottom: 15px;
 }
 label{
-    display: block;
+    display:block;
     margin-bottom: 5px;
 }
 input[type="text"],
 input[type="email"],
-textarea{
+textarea,
+select{
     width: calc(100%-20px);
     padding: 10px;
     margin: 5px 0 15px 0;
@@ -262,4 +273,27 @@ button[type="submit"]{
 }
 button[type="submit"]:hover{
     background-color: #FB8500;
+}
+/* FIM Estilos para a seção de comentários */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
