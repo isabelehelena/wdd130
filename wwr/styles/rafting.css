@@ -297,3 +297,86 @@ map-responsive iframe {
     width:100%;
     position:absolute;
 }
+
+/* Trip styles */
+
+main {
+    text-align:center;
+    padding: 20px 0;
+}
+.cta {
+    text-align:center;
+    margin-bottom: 40px;
+}
+.cta h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.button:hover {
+    background-color: #286090;
+}
+
+.trip-description {
+    display:block;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.trip {
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trip img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.trip h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.trip p {
+    font-size: 1.1em;
+}
+
+.trip-table {
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color:  #337ab7;
+    color: #fff;
+}
+
