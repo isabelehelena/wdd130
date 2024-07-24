@@ -55,18 +55,17 @@ nav a:hover {
 
 .hero {
     position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 20px rgba(227, 107, 107, 0.1);
+    height: 400px; /* Altura ajustável conforme necessário */
+    text-align: center;
     overflow: hidden;
+    width: 100%;
 }
 
 .hero img {
     width: 100%;
     height: auto;
-    display: block;
+    display:block;
+
 }
 
 .hero h1 {
@@ -81,55 +80,27 @@ nav a:hover {
     background-color: rgba(112, 103, 239, 0.299); /* Cor de fundo com transparência */
     border-radius: 0 0 10px 10px;
     z-index: 1;
+
 }
 
-.hero article {
-    position: relative;
+article {
     padding: 20px;
+    text-align: center;
 }
 
-.hero article img {
-    float: right;
-    margin-left: 20px;
-    width: 300px; /* Ajuste conforme necessário */
+article img {
+    max-width: 100%;
     height: auto;
-}
-
-.hero article p {
-    color: var(--secondary-color);
-    font-size: 1.1rem;
-}
-
-section {
-    margin: 30px 0;
-}
-
-section h2 {
-    color: var(--primary-color);
-    font-size: 2rem;
     margin-bottom: 20px;
 }
 
-section p {
-    color: var(--secondary-color);
-    font-size: 1.1rem;
+article p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
 }
 
-.container{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-.container-img{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
+
 
 footer {
     background-color: var(--primary-color);
@@ -530,4 +501,69 @@ section {
 .grid-item p {
     font-size: 1em;
     color: #666;
+}
+
+/* ajustes abaut us */
+.adventure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    overflow-x: auto; /* Para rolar horizontalmente se necessário */
+}
+
+figure {
+    text-align: center;
+    margin: 0 10px;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+#historico {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#historico h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.historico-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.historico-text {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+}
+
+.historico-image {
+    flex: 1;
+    text-align: center;
+}
+
+.historico-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
